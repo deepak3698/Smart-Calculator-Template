@@ -24,9 +24,10 @@ for ch in b:
         print(add)
         break
     elif(ch.lower() in subtract):
-        sub = 0
+        sub = a[0]
+        a[0]=0
         for i in a:
-            sub = sub + i
+            sub = sub - i
         print(sub)
         break
 else:
